@@ -6,7 +6,15 @@ jobs:
   
     steps:
       - checkout
-             
+      
+      - run:
+          name: "Run the app"
+          command: dotnet restore
+      
+      - run:
+          name: "Run the app"
+          command: dotnet build
+          
       - run:
           name: "Run the app"
           command: dotnet run
