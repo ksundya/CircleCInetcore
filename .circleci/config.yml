@@ -8,5 +8,13 @@ jobs:
       - checkout
 
       - run:
+          name: "PreInstall"
+          command: sudo apt-get update
+          
+      - run:
+          name: "Install"
+          command: sudo apt-get install dotnet-sdk-3.0
+          
+      - run:
           name: "Run the app"
           command: dotnet bin/Debug/netcoreapp3.0/circleCI.dll
