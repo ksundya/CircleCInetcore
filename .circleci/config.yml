@@ -8,8 +8,5 @@ jobs:
       - checkout
 
       - run:
-          name: "Test the executable"
-          command: .\bin\Release\netcoreapp3.0\win10-x64\publish\CircleCI.exe
-
-      - store_artifacts:
-          path: .\bin\Release\netcoreapp3.0\win10-x64\publish\CircleCI.exe
+          name: "Run the app"
+          command: dotnet run
