@@ -10,4 +10,4 @@ jobs:
       - run:
           name: "Run the app"
           command: dotnet run
-          working_directory: circleCI/circleCI.csproj
+          working_directory: circleCI
