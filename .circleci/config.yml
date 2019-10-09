@@ -13,7 +13,7 @@ jobs:
           
       - run:
           name: "Install"
-          command: apt-get install dotnet-sdk-2.2
+          command: apt-get install dotnet-sdk-3.0
           
       - run:
           name: "Run the app"
