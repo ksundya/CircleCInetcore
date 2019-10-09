@@ -6,14 +6,10 @@ jobs:
   
     steps:
       - checkout
-
-      - run:
-          name: "PreInstall"
-          command: sudo apt-get update
           
       - run:
           name: "Install"
-          command: sudo apt-get install dotnet-sdk-3.0
+          command: apt-get install dotnet-sdk-3.0 sudo
           
       - run:
           name: "Run the app"
