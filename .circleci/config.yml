@@ -9,14 +9,6 @@ jobs:
       
       - run:
           name: "Install"
-          command: wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
-      
-      - run:
-          name: "Install"
-          command: dpkg -i packages-microsoft-prod.deb
-       
-      - run:
-          name: "Install"
           command: apt-get update
           
       - run:
