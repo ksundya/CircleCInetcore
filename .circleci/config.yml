@@ -11,5 +11,15 @@ jobs:
       
       - run:
           name: "Run the app"
+          command: dotnet restore
+          working_directory: circleCI
+      
+      - run:
+          name: "Run the app"
+          command: dotnet build
+          working_directory: circleCI
+          
+      - run:
+          name: "Run the app"
           command: dotnet run
           working_directory: circleCI
